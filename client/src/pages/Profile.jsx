@@ -27,6 +27,7 @@ export default function Profile() {
   const [imageError, setImageError] = useState(false);
   const [formData, setFormData] = useState({});
   const { currentUser, loading, error  } = useSelector((state) => state.user);
+  const [updateSuccess, setUpdateSuccess] = useState(false);
 
   useEffect(() => {
     if (image) {
